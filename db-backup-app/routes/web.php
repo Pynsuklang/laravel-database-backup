@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/get-backup', [App\Http\Controllers\MyBackupController::class, 'store'])->name('get-backup');
